@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>AUDIO</h1>
+    <p>posso ouvir musica se eu quiser:</p>
+    <audio src="audio/audio1.mpeg" controls autoplay></audio>
+    <h1>Video no meu navegador</h1>
+    <p>O video a seguir está armazenado no meu servidor:</p>
+    <video src="video/Video1.mp4" width="500px" controls autoplay loop></video>
+    <h1>Inserindo videos extenos</h1>
+    <p>mais especificamente a partir da opcao INCORPORAR disponibilizada atraves do Youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rDAjY3d2wtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(38, 0, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            color: black;
+            text-decoration:underline
+        }
+        a:active{
+            color: yellow;
+        }                /* "active" é o que aparece quando o mouse clica */
+        a::after{
+            content: " [Link]";
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+
+    </style>
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links em listas</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=JIEMnEKWDiY" target="_blank">Link qualquer 1</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" target="_blank">Link qualquer 2</a></li>
+        <li><a href="https://www.google.com/search?q=ola+mundo+em+c%2B%2B&oq=ola+mund&aqs=chrome.3.69i57j69i59l5j0i512j69i60.3053j0j1&sourceid=chrome&ie=UTF-8" target="_blank">Link qualquer 3</a></li>
+    </ul>
+</body>
+</html>
