@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+
+<body style="margin: auto;">
+    <fieldset style="width: 300px;">
+        <legend>Exemplo de soma com OUTPUT</legend>
+        <form action="Exemplo.php" method="get">
+            <p>
+                <label for="inumero1">Numero 1:</label><input type="number" name="numero" id="inumero1" required
+                    oninput="isoma.innerHTML=Number(inumero1.value) + Number(inumero2.value)"><br><br>
+                <label for="inumero2">Numero 2:</label><input type="number" name="numero" id="inumero2" required
+                    oninput="isoma.innerHTML=Number(inumero1.value) + Number(inumero2.value)">
+            </p>
+            <p>
+                <label for="isoma">Soma:</label><output name="saida" id="isoma">0</output>
+            </p>
+            <p>
+                <label for="range">Range</label>
+                <input type="range" name="range" id="range" value="50" oninput="saida2.innerHTML=Number(range.value)">
+                <output name="saida2" id="saida2">50</output>
+            </p>
+            <p>
+                <label for="idata">Data:</label>
+                <input type="number" name="data" id="idata" min="1900" max="2023" oninput="IdadeAtual()">
+                <br>
+                <label for="sdata">Idade:</label>
+                <output id="sdata">0</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+    <script>
+        function IdadeAtual() {
+            let AnoAtual = new Date().getFullYear;
+            sdata.innerHTML = Number(AnoAtual) - Number(idata.value);
+        }
+    </script>
+</body>
+
+</html>
